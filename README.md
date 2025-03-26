@@ -3,7 +3,7 @@
 ## 🚀 Project Overview
 This project is the **Week 8 Final Project** for the **PLP Web Development Course**. It demonstrates proficiency in **HTML5, CSS3, JavaScript**, and **website deployment** by building a fully responsive multipage website for **Plasma Water Africa**, a company specializing in water solutions, borehole drilling, solar installations, irrigation, and plumbing.
 
-## 🎯 Assignment Requirements & Implementation
+## 🎯 Features
 This project fulfills all the assignment criteria:
 
 1. **Multipage Website**
@@ -37,7 +37,7 @@ This project fulfills all the assignment criteria:
 
 6. **Deployment**
    - The repository is available at: [GitHub Repo](https://github.com/aizocraft/FrontEnd-PWA.git)
-   - Live Demo: **[To be added after deployment](https://github.com/aizocraft/FrontEnd-PWA.git)**
+   - Live Demo: [Live Link](https://week8assignment.netlify.app/)
 
 ## 📁 Project Structure
 ```
@@ -76,6 +76,8 @@ Plasma Water Africa/
 ## 📞 Contact
 For any questions or contributions, feel free to reach out!
 
----
-**Plasma Water Africa** - Transforming Water Solutions 🌍💧
+0741653862
+kariukiisaac911@gmail.com
 
+---
+**AizoCraft** 
