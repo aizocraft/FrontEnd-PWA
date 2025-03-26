@@ -1,0 +1,647 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+body{
+background-color: var(--background-color);
+font-family: "Baloo Bhai 2", cursive;
+}
+
+/* Fieldset CSS */
+fieldset{
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 1300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.fieldset-cover{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+legend{
+    font-size: 18px;
+    margin-left: 30px;
+    padding: 10px;
+    letter-spacing: 3px;
+    border: 2px solid #218db5;
+    color: white;
+    background-color: #218db5;
+    border-radius: 4px;
+}
+
+
+.text-container{
+    padding: 15px;
+}
+
+.text-container p{
+   font-size: 20px;
+   font-family:  "Baloo Bhai 2", cursive;
+}
+
+
+
+/* Factors CSS */
+.key-factors-container {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+.key-factors-container h2 {
+    font-family: "Baloo Bhai 2", cursive;
+    color: #074075;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px; /* Adjust as needed */
+    margin-bottom: 21px;
+}
+
+.key-factors-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #074075;
+}
+
+.key-factors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+.key-factors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.factor {
+    background-color: var(--factor-back);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.factor:hover {
+    transform: translateY(-10px);
+}
+.factor-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.factor-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #074075;
+}
+.factor-description {
+    font-size: 1rem;
+    font-family: "Baloo Bhai 2", cursive;
+}
+@media (max-width: 768px) {
+    .key-factors {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Promo CSS */
+.promohead {
+    text-align: center;
+ /* Adjust as needed */
+}
+
+.promohead h2 {
+    font-family: "Baloo Bhai 2", cursive;
+    color: #074075;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px; /* Adjust as needed */
+    margin-bottom: 21px;
+}
+
+.promohead h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #074075;
+}
+section#promo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo-container::-webkit-scrollbar {
+    height: 12px;
+}
+.promo-container::-webkit-scrollbar-track {
+        background: #218db5;
+}
+.promo-container::-webkit-scrollbar-thumb {
+    background-color: #074075;
+    border-radius: 4rem;
+}
+.promo-container {
+    padding: 10px 2px 16px;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    overflow-x: auto;
+    margin: 0 10%;
+}
+.promo-card {
+    width: 320px;
+    height: 420px;
+    min-width: 320px;
+    min-height: 420px;
+    padding: 16px;
+    color: black;
+    position: relative;
+    background: none;
+    transition: color 0.4s;
+    border: 1px solid #666;
+    border-radius: 6px;
+}
+
+.promo-card svg{
+    height: 30%;
+    width: 30%;
+}
+/* Responsive CSS */
+@media screen and (max-width: 1290px) {
+    .promo-container {
+        max-width: 680px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .promo-container {
+        max-width: 350px;
+    }
+}
+.promo-card:hover > * , .promo-card:hover svg path {
+    color: white;
+    fill: white;
+    transition: color 0.6s;
+}
+.promo-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to right, #074075, #218db5);
+    z-index: -1;
+    transition: all .4s;
+    border-radius: 0 0;
+    border-radius: 6px;
+}
+.promo-card:hover::before {
+    height: 100%;
+}
+.promo-card svg {
+    margin-top: 8px;
+    transition: color 0.6s;
+}
+.h3-card-title{
+    font-size: 25px;
+    transition: color 0.6s;
+}
+.card-text {
+    padding: 8px;
+    color: #666;
+    transition: color 0.6s;
+    font-family: "Baloo Bhai 2", cursive;
+}
+.promo-img {
+    margin-top: 10px;
+}
+
+
+
+
+.teamwrapper {
+  position: relative;
+  text-align: center;
+}
+
+.teamwrapper h2 {
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 70px;
+  position: relative;
+  display: inline-block;
+  color: #218db5;
+}
+
+.teamwrapper h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust this value for spacing between the text and the line */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px; /* Adjust this value for the thickness of the line */
+  background-color: #074075;
+}
+
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member {
+  background: var(--blog-back);
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #8e8b8b;  
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.team .team_member h3 {
+  color: #218db5;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role {
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.team .team_member .social-icons {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #074075, #218db5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.team .team_member .social-icons a{
+ text-decoration: none;
+}
+
+.team .team_member:hover .social-icons,
+.team .team_member:hover .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .team_member .social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.team .team_member .social-icons a:hover {
+  color: #000;
+}
+
+.team .team_member .description {
+  transition: opacity 0.5s ease;
+}
+
+.team .team_member:hover .description {
+  opacity: 0;
+}
+
+
+
+
+
+.faqcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.faqsection {
+    flex: 1 1 45%;
+ 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faqsection h2 {
+    color: #074075;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.faqsection h2::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: #074075;
+}
+
+.accordion {
+    width: 90%;
+    padding: 15px 20px;
+    border: 2px solid #218db5;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.accordion .icon {
+    margin: 0 15px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url('https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png') no-repeat 8px 7px #218db5;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.5s ease-in;
+}
+
+.accordion h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #074075;
+}
+
+.active {
+    background-color: #218db5;
+    color: #ffffff;
+}
+
+.active .icon {
+    background: url('https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png') no-repeat 8px -25px #ffffff;
+}
+
+.panel {
+    padding: 0 20px;
+    border-left: 2px solid #218db5;
+    margin-left: 30px;
+    font-size: 16px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in;
+}
+
+.feedback-section h2 {
+    margin-top: 0;
+    color: #074075;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #074075;
+}
+
+textarea, select, input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #218db5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #074075;
+}
+
+.stars {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 24px;
+    color: #ddd;
+}
+
+.star.selected {
+    color: #f5a623;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex: 1 1 100%;
+    }
+}
+
+.faqcontainer h2{
+margin-bottom: 25px;
+}
+
+
+
+
+
+.container-mission {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.mission-section {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Add gap for spacing */
+}
+
+.vision-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    gap: 20px; /* Add gap for spacing */
+}
+
+.vision-section .text-section,
+.mission-section .text-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.vision-section .text-section h2,
+.mission-section .text-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.vision-section .text-section p,
+.mission-section .text-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.vision-section .image-section,
+.mission-section .image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.vision-section .image-section img {
+    max-width: 80%; /* Reduce the image size */
+    height: 300px; /* Specific height for vision image */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.mission-section .image-section img {
+    max-width: 80%; /* Reduce the image size */
+    height: 400px; /* Specific height for mission image */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.vision-section:hover .text-section, 
+.vision-section:hover .image-section img,
+.mission-section:hover .text-section, 
+.mission-section:hover .image-section img {
+    transform: translateY(-10px); /* Slightly lift the elements on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Add a deeper shadow on hover */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s ease;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .vision-section,
+    .mission-section {
+        flex-direction: column;
+    }
+
+    .vision-section .text-section, 
+    .vision-section .image-section,
+    .mission-section .text-section, 
+    .mission-section .image-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .vision-section .image-section img,
+    .mission-section .image-section img {
+        max-width: 100%; /* Ensure full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px;
+    }
+}
+
+
+.text-section h2{
+    color: #218db5;
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water & Energy Solutions in Africa | Plasma Water Africa | 2547 4165 3862</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+ 
+      <!-- Content -->
+    <div id="content">
+       
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/Iconslogo/logo.png" alt="Logo">
+        </div>      
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+           <li class="dropdown">
+            <a href="services.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="borehole.html">Borehole</a>
+              <a href="solar.html">Solar</a>
+              <a href="pumps.html">Pumps & Generators</a>
+              <a href="irrigation.html">Irrigation Systems</a>
+              <a href="tower.html">Water Tower</a>
+              <a href="plumbing.html">Plumbing</a>
+            </div>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." id="search-input">
+          <button onclick="performSearch()"><img src="images/Iconslogo/find.png" alt="Search" ></button>
+        </div>
+        <div class="toggle-theme" id="theme-toggle"></div>
+          <div class="menu-toggle">
+            <img src="images/Iconslogo/menu.png" alt="Menu" onclick="toggleMenu()">
+          </div>
+          <div class="close-icon">
+            <img src="images/Iconslogo/cross.png" alt="Close Menu" >
+          </div>
+      </nav>
+
+        <!-- Banner Section -->
+    <div class="banner">
+        <img src="images/banner/borehole.jpg" class="active" alt="Borehole Drilling">
+        <img src="images/banner/drip.jpeg" alt="Irrigation">
+        <img src="images/banner/solarproducts.png" alt="Solar Products">
+        <img src="images/banner/tower.jpg" alt="Water Tower">
+        <img src="images/banner/solar.jpg" alt="Solar Installation">
+        <div class="text" id="text-container">
+            <div class="title" id="title"></div>
+            <div class="subtitle" id="subtitle"></div>
+        </div>
+    </div>
+
+
+
+
+<!-- About Section -->
+<div class="about-area" id="about">
+    <div class="text-part-abt">
+        <h1 style="text-align: center; padding-bottom: 10px">
+            <span style="font-size: 80px; text-decoration: none; border-bottom: 2px solid #218db5; color: #074075;" >A</span>bout Us
+        </h1>
+        <!-- About Content -->
+        <div class="about">
+            <div class="abt-content">
+                <div class="rem-part">
+                    <!-- Social Media Icons -->
+                    <div class="social-media">
+                        <div class="icons">
+                            <a href="https://www.facebook.com/profile.php?id=100083069751841&mibextid=ZbWKwL" target="_blank"><img src="images/Iconslogo/facebook.png" /></a>
+                            <a href="#" target=""><img src="images/Iconslogo/x-twitter.svg" /></a>
+                            <a href="https://www.instagram.com/plasmawaterafrica/" target="_blank"><img src="images/Iconslogo/instagram.png" /></a>
+                        </div>
+                    </div>
+                    <!-- Left Part -->
+                    <div class="left-part">
+                        <span class="h2" style="color: #218db5;">Plasma Water <span style="color:  #074075">Africa</span></span><br />
+                        <hr  />
+                        <p>
+                            At Plasma Water Africa we are committed to revolutionizing water and energy solutions to address the pressing challenges of water scarcity in Africa. with a focus on innovation, sustainability and community impact, we strive to provide comprehensive solutions that empowers individuals, communities and industries to access clean and reliable water sources.
+
+                        </p>
+                        
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <div class="abt-btn">
+                        <button type="button" id="previewButton" class="button1">View Company Profile</button>
+
+                        <button type="button" onclick="window.location.href='contact.html';" class="button2">Get in Touch</button>
+                    </div>
+                    <div id="pdfPreviewContainer">
+                        <div class="pdf-preview">
+                            <iframe id="pdfIframe" src="" frameborder="0"></iframe>
+                            <div class="controls">
+                                <button id="closeButton" class="close-btn">✕ Close</button>
+                                <a id="downloadButton" href="" download class="download-btn" style="text-decoration: none;">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image Part -->
+                <div class="img-part" data-aos="fade-left">
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Services Section -->
+<div class="servicecontainer">
+    <div class="serviceheader">
+        <h1>Services</h1>
+        <h3>We offer the following</h3>
+    </div>
+    <div class="services">
+        <div class="service-card">
+            <div class="service-icon"><img src="images/Iconslogo/borehole.png" alt="Borehole Drilling"></div>
+            <div class="service-title">Borehole Drilling</div>
+            <div class="see-more" onclick="showPopup(1)">See more</div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><img src="images/Iconslogo/waterpump.png" alt="Water Pumps"></div>
+            <div class="service-title">Water Pumps</div>
+            <div class="see-more" onclick="showPopup(2)">See more</div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><img src="images/Iconslogo/solar.png" alt="Solar Products"></div>
+            <div class="service-title">Solar Products</div>
+            <div class="see-more" onclick="showPopup(3)">See more</div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><img src="images/Iconslogo/test.png" alt="Water Testing"></div>
+            <div class="service-title">Water Testing</div>
+            <div class="see-more" onclick="showPopup(4)">See more</div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><img src="images/Iconslogo/generator.png" alt="Generators"></div>
+            <div class="service-title">Generators</div>
+            <div class="see-more" onclick="showPopup(5)">See more</div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><img src="images/Iconslogo/water-tower.png" alt="Water Tower"></div>
+            <div class="service-title">Water Tower</div>
+            <div class="see-more" onclick="showPopup(6)">See more</div>
+        </div>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <div class="popup-title" id="popup-title"></div>
+        <div class="popup-text" id="popup-text"></div>
+        <ul class="popup-list" id="popup-list"></ul>
+        <a href="#" id="popup-link" class="popup-link" target="_blank">Learn More</a>
+    </div>
+</div>
+
+
+
+
+
+
+        <div class="text-part">
+            <div class="inner" id="h1">
+                <h1>Who</h1>
+                
+            <center>
+                <div class="imgrel fade">
+                    <img src="images/Iconslogo/taflo.png" style="height: 100px; width: auto;" />
+                </div>
+                <div class="imgrel fade">
+                    <img src="images/Iconslogo/grundfos.png" style="height: 100px; width: auto;" />
+                </div>
+                <div class="imgrel fade">
+                    <img src="images/Iconslogo/dayliff.png" style="height: 100px; width: auto;" />
+                </div>
+                <div class="imgrel fade">
+                    <img src="images/Iconslogo/pedrollo.png" style="height: 100px; width: 80%;" />
+                </div>
+            </center>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+
+    
+
+<!-- Counters -->
+<div class="counters">
+
+ 
+  
+ <div class="counter borehole">
+        <div class="counter-content">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <image xlink:href="images/counter/borehole.png" width="50" height="50" />
+                </svg>
+            </div>
+            <div class="text-container">
+                <h2 class="number"><span class="countervalue" data-value="60">0</span>+</h2>
+                <p class="detail">Boreholes Drilled</p>
+            </div>
+        </div>
+    </div>
+    <div class="counter pump">
+        <div class="counter-content">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <image xlink:href="images/counter/waterpump.png" width="50" height="50" />
+                </svg>
+            </div>
+            <div class="text-container">
+                <h2 class="number"><span class="countervalue" data-value="50">0</span>+</h2>
+                <p class="detail">Water Pumps</p>
+            </div>
+        </div>
+    </div>
+    <div class="counter solar">
+        <div class="counter-content">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <image xlink:href="images/counter/solar.png" width="50" height="50" />
+                </svg>
+            </div>
+            <div class="text-container">
+                <h2 class="number"><span class="countervalue" data-value="100">0</span>+</h2>
+                <p class="detail">Solars Installed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="counter generator">
+        <div class="counter-content">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <image xlink:href="images/counter/generator.png" width="50" height="50" />
+                </svg>
+            </div>
+            <div class="text-container">
+                <h2 class="number"><span class="countervalue" data-value="30">0</span>+</h2>
+                <p class="detail">Generators</p>
+            </div>
+        </div>
+    </div>
+    <div class="counter customer">
+        <div class="counter-content">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <image xlink:href="images/counter/customer-review.png" width="50" height="50"  />
+                </svg>
+            </div>
+            <div class="text-container">
+                <h2 class="number"><span class="countervalue" data-value="150">0</span>+</h2>
+                <p class="detail">Happy Clients</p>
+            </div>
+        </div>
+    </div>
+   
+
+
+</div>
+
+
+
+    <!-- Testimonial Section -->
+<div class="testimonial-area" id="testimonial">
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Testimonials</h1>
+            <div class="border"></div>
+            <div class="row">
+                <!-- Testimonials -->
+                <div class="col">
+                    <div class="testimonial">
+                        <div class="head-testi">
+                            <img src="images/blankprofile.jpg" alt="John" />
+                            <div class="name-testi">John Kamau</div>
+                            <div class="subname-testi">Home Owner, Nairobi</div>
+                            <div class="stars">
+                                <!-- Star Ratings -->
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                            </div>
+                        </div>
+                        <div class="testi-content">
+                            <p>Their team was incredibly professional, efficient, and knowledgeable. From the initial consultation to the completion of the borehole, every step was handled with precision and care. I highly recommend them to anyone in need of reliable water solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <div class="head-testi">
+                            <img src="images/blankprofile.jpg" alt="Susan" />
+                            <div class="name-testi">Susan Njeri</div>
+                            <div class="subname-testi">Property Owner, Nakuru</div>
+                            <div class="stars">
+                                <!-- Star Ratings -->
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                            </div>
+                        </div>
+                        <div class="testi-content">
+                            <p>They guided us through every aspect of the process. Not only are we saving significantly on our energy bills, but we also feel good about reducing our carbon footprint. The quality of the solar panels and the workmanship of their installation team exceeded our expectations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <div class="head-testi">
+                            <img src="images/blankprofile.jpg" alt="Kip" />
+                            <div class="name-testi">Timothy Kipchoge</div>
+                            <div class="subname-testi">Business Man, Baringo</div>
+                            <div class="stars">
+                                <!-- Star Ratings -->
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                                <img src="images/Iconslogo/star_gold.png" />
+                            </div>
+                        </div>
+                        <div class="testi-content">
+                            <p>Their team's knowledge and expertise were evident from the moment they arrived on-site. They utilized state-of-the-art equipment and techniques to ensure the job was completed efficiently and with minimal disruption to our property.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+    
+        
+
+    <div class="footer">
+        <div class="get-in-touch">
+             <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>0710 743 793</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p class="footeremail">plasmawaterafrica@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Ruiru - Kamakis</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <p>www.plasmawaterafrica.com</p>
+                </div>
+            </div>
+        </div>  
+          <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="blog-section">
+                  <h2>Blog</h2>
+                  <a href="blog.html#blogborehole">  <div class="blog-item">
+                      <img src="images/footer/drilling.jpg" alt="Borehole image" class="blog-image">
+                      <div class="blog-name">Complete Guide to Borehole Drilling</div>
+                  </div> </a>
+                  <a href="blog.html"> <div class="blog-item">
+                      <img src="images/footer/solarpanels.jpeg" alt="Solar image" class="blog-image">
+                      <div class="blog-name"> Solar Panel Installations Manual</div>
+                  </div> </a>
+                  <a href="blog.html#blogtower">  <div class="blog-item">
+                      <img src="images/footer/towerblog.png" alt="Blog 3" class="blog-image">
+                      <div class="blog-name">Water Tower Plumbing Mastery</div> 
+                  </div> </a> 
+              </div>
+               <!-- Copyright Information -->
+              <div class="copyright">
+                  <p> &copy; 2025 Plasma Water Africa</p>
+              </div>
+        </div>
+           
+        
+        <div class="get-to-know-more">
+            <h2>Get to know more</h2>
+            <p> Discover our professional services tailored for your needs in Africa. Reach out today for precise solutions that power your future!</p>
+            <a href="contact.html" class="contact-btn">Contact</a>
+            <h2>Follow us on social media</h2>
+            <div class="socialmedia">
+                    <a href="https://wa.me/254728749722?text=Hi%20Plasma%20Water%20Africa,%20I%20am%20interested%20in%20learning%20more%20about%20your%20products%20and%20services." target="_blank" class="social-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100083069751841&mibextid=ZbWKwL" target="_blank" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                       
+                    </a>
+                    <a href="https://ke.linkedin.com/in/martin-mbaka-ba8446185" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        
+                    </a>
+                    <a href="https://www.instagram.com/plasmawaterafrica/" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+  
+    
+    </div>
+    
+    <!-- Go Up button -->
+    <div class="cta hide" id="goup">
+        <a href="#home"><img src="images/Iconslogo/arrup.png" /></a>
+    </div>
+
+</div>
+    <script>
+        // Handle goup button
+        myID = document.getElementById("goup");
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 800) {
+                myID.className = "cta show";
+            } else {
+                myID.className = "cta hide";
+            }
+        };
+        window.addEventListener("scroll", myScrollFunc);
+        // Dynamically change the name in banner area
+        document.getElementById("iden-name").innerHTML = "Plasma Water Africa";
+      
+ 
+        // Animate Counters
+        var counters = document.querySelectorAll('.counter');
+        var animationDone = false;
+        function animateCounters() {
+            var scrollPosition = window.scrollY + window.innerHeight;
+            counters.forEach(counter => {
+                if (counter.offsetTop < scrollPosition && !animationDone) {
+                    var value = parseInt(counter.querySelector('.countervalue').getAttribute('data-value'));
+                    var step = Math.ceil(value / 100);
+                    var count = 0;
+                    var interval = setInterval(() => {
+                        count += step;
+                        counter.querySelector('.countervalue').innerText = count;
+                        if (count >= value) {
+                            counter.querySelector('.countervalue').innerText = value;
+                            clearInterval(interval);
+                        }
+                    }, 30);
+                    animationDone = true;
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
+      <script>
+          ScrollReveal().reveal('.aboutus', { delay: 300, distance: '50px', origin: 'bottom', duration: 1000, easing: 'ease-in-out' });
+     </script>
+         <script>
+            document.getElementById('previewButton').addEventListener('click', function() {
+                const pdfUrl = 'profile.pdf'; // Replace with your PDF file path
+                const pdfIframe = document.getElementById('pdfIframe');
+                const downloadButton = document.getElementById('downloadButton');
+    
+                pdfIframe.src = pdfUrl;
+                downloadButton.href = pdfUrl;
+    
+                document.getElementById('pdfPreviewContainer').classList.add('show');
+            });
+    
+            document.getElementById('closeButton').addEventListener('click', function() {
+                document.getElementById('pdfPreviewContainer').classList.remove('show');
+            });
+        </script>
+            
+</body>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

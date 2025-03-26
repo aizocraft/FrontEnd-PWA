@@ -1,0 +1,458 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+body{
+background-color: var(--background-color);
+font-family: "Baloo Bhai 2", cursive;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== GALLERY ===============*/
+.gallery {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.gallery__card {
+  position: relative;
+  width: 208px;
+  height: 268px;
+  border-radius: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.gallery__img, 
+.gallery__card::after, 
+.gallery__data {
+  position: absolute;
+}
+
+.gallery__img {
+  inset: 0;
+  margin: auto;
+  transition: transform .3s;
+}
+
+.gallery__card::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsla(0, 0%, 100%, 0) 32%,
+              hsla(0, 0%, 0%, .3) 100%);
+  top: 0;
+  z-index: 1;
+}
+
+.gallery__data {
+  bottom: 1.5rem;
+  left: 1.75rem;
+  z-index: 10;
+}
+
+.gallery__title, 
+.gallery__subtitle {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.gallery__title {
+  font-size: var(--h3-font-size);
+}
+
+.gallery__subtitle {
+  font-size: var(--smaller-font-size);
+}
+
+.gallery__overflow {
+  position: relative;
+}
+
+.gallery__thumbnail {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .3s;
+}
+
+.gallery__thumbnail-img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+/* Swiper class */
+.gallery-cards,
+.gallery-thumbs {
+  width: 260px;
+}
+
+.gallery-cards:hover .gallery__img {
+  transform: scale(1.1);
+}
+
+.gallery .swiper-wrapper {
+  padding: 2.5rem 0;
+}
+
+.gallery-thumbs {
+  height: 132px;
+}
+
+/* Active thumbnail */
+.swiper-slide-active .gallery__thumbnail {
+  transform: translateY(-1.25rem) scale(1.2);
+}
+
+/* Rotate thumbnail */
+.swiper-slide-next .gallery__thumbnail {
+  transform: rotate(15deg);
+}
+
+.swiper-slide-prev .gallery__thumbnail {
+  transform: rotate(-15deg);
+}
+
+/* Sliding numbers */
+.swiper-pagination-fraction {
+  font-size: var(--small-font-size);
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: var(--text-color);
+  bottom: 0;
+}
+
+/* Arrow buttons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  top: 5.5rem;
+}
+
+.swiper-button-next {
+  right: -1.5rem;
+  transform: rotate(15deg);
+}
+
+.swiper-button-prev {
+  left: -1.5rem;
+  transform: rotate(-15deg);
+}
+
+/* Other swiper settings */
+.gallery-cards::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: initial;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 1024px) {
+  .gallery__card {
+    width: 220px;
+    height: 290px;
+  }
+  .gallery__thumbnail {
+    width: 65px;
+    height: 65px;
+  }
+  .gallery-cards,
+  .gallery-thumbs {
+    width: 280px;
+  }
+}
+.contact-banner {
+  background-color: var(--background-color);
+  padding: 40px 20px; /* Increased padding for a spacious feel */
+  text-align: center;
+  position: relative; /* Ensure relative positioning for absolute positioning of arrow */
+  border-radius: 12px; /* Rounded corners for a modern touch */
+}
+
+.contact-banner h2 {
+  font-size: 2.5em; /* Larger font size for prominence */
+  color: #074075; /* Darker color for strong contrast */
+  margin-bottom: 15px; /* Increased space below */
+  font-weight: 700; /* Bold text for emphasis */
+}
+
+.contact-banner p {
+  font-size: 1.2em; /* Slightly larger font size for readability */
+  color: var(--text-color); /* Soft gray for a modern look */
+  margin-bottom: 30px; /* More space below the paragraph */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.wavy-arrow {
+  width: 50px; /* Adjusted size for better visibility */
+  height: auto;
+  animation: bounceArrow 0.6s infinite alternate; /* Adjusted animation timing */
+  position: absolute; /* Positioning for arrow */
+  top: 150px; 
+  left: 48%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #007bff; /* Bright blue for a modern look */
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px; /* Slightly larger padding for a more prominent button */
+  border-radius: 8px; /* Rounded corners for a modern feel */
+  font-size: 1.1em; /* Larger font size for emphasis */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for button effect */
+}
+
+.contact-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+@keyframes bounceArrow {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-15px); /* Increased bounce distance */
+  }
+}
+
+
+
+
+
+
+
+
+.whyus {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--background-color); 
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a more modern appearance */
+  border: 1px solid #e0e0e0; /* Light border for subtle definition */
+}
+
+.whyus h2 {
+  color: #007bff; /* Darker color for better contrast */
+  font-size: 2.5em; /* Larger font size for prominence */
+  margin-bottom: 20px; /* Increased space below the heading */
+  font-weight: 700; /* Bold text for emphasis */
+  text-align: center; /* Center align the heading */
+  border-bottom: 3px solid #007bff; /* Blue border for a modern touch */
+  padding-bottom: 10px; /* Padding below the heading */
+}
+
+.whyus .article-image {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px; /* Match the rounded corners of the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.whyus p {
+  color: #34495e; /* Slightly darker text for better readability */
+  font-size: 18px;
+  line-height: 1.8; /* Increased line height for readability */
+  text-align: center; /* Center align the paragraph text */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.whyus ul {
+  padding-left: 0; /* Remove default padding */
+  color: #34495e; /* Consistent text color */
+  font-size: 16px;
+  line-height: 1.8; /* Consistent line height */
+  list-style: none; /* Remove default list styling */
+}
+
+.whyus li {
+  position: relative;
+  margin-bottom: 15px; /* Increase space between items */
+  padding-left: 25px; /* Add space for custom bullets */
+}
+
+/* Style the custom list bullets */
+.whyus ul li:before {
+  content: "\2022"; /* Bullet character */
+  color: #007bff; /* Blue color for the bullets */
+  font-size: 24px; /* Larger bullets */
+  position: absolute;
+  left: 0; /* Position bullets to the left */
+  top: 0; /* Align bullets with the text */
+}
+
+
+/* Intro */
+.services-content h2 {
+  font-size: 2.5em; /* Larger font size for prominence */
+  color: #2C8EBB; /* Cool color for the heading (teal-blue) */
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: 700; /* Bold text */
+  border-bottom: 4px solid #2C8EBB; /* Bottom border matching the text color */
+  padding-bottom: 10px; /* Padding below the text */
+  text-align: center; /* Center align the heading */
+  letter-spacing: 1px; /* Slightly increased letter spacing for elegance */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for added depth */
+}
+
+
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: var(--background-color);
+  color: #333;
+}
+
+.services-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.services-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.services-content p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.services-links {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #ddd;
+}
+
+.services-links h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.services-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-links ul li {
+  margin-bottom: 15px;
+}
+
+.services-links ul li a {
+  text-decoration: none;
+  color: #004d99;
+  font-weight: bold;
+  font-size: 1.2em;
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.services-links ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #00aaff;
+  transition: width 0.3s;
+}
+
+.services-links ul li a:hover::before {
+  width: 100%;
+}
+
+.services-links ul li a:hover {
+  color: #00aaff;
+  transform: translateX(5px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .services-container {
+      flex-direction: column;
+  }
+
+  .services-links {
+      border-left: none;
+      border-top: 2px solid #ddd;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-content h2 {
+      font-size: 1.5em;
+  }
+
+  .services-content p {
+      font-size: 1.2em;
+  }
+
+  .services-links ul li a {
+      font-size: 1em;
+  }
+}
+
+
+/* Hide the image for screen sizes smaller than 1024px (typically tablets and mobiles) */
+@media (max-width: 1024px) {
+  .wavy-arrow {
+    display: none;
+  }
+}

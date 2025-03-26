@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thank you for submitting the form</title>
+    <meta http-equiv="refresh" content="5;url=index.html">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f6f6f6;
+            color: #2d2d2d;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2d2d2d;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #2d2d2d;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #2d2d2d;
+            border: 2px solid #2d2d2d;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Thank you!</h1>
+        <p>Your form has been submitted.</p>
+        <p>You will be redirected to the home page in 5 seconds.</p>
+        <p>If you are not redirected automatically, please click <a href="index.html"
+                class="btn">here</a></p>
+    </div>
+</body>
+
+</html>
